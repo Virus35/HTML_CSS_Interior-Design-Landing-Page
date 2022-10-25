@@ -1,0 +1,361 @@
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 62.5%;
+    background: url('./Images/pexels-max-vakhtbovych-6794920.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container{
+    /* border: 2px solid red; */
+    max-width: 1400px;
+    margin: auto;
+    width: 90%;
+    color: #fff;
+}
+
+li{
+    list-style-type: none;
+}
+
+.navbar-container{
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    align-items: center;
+}
+
+.logo{
+    /* border: 2px solid red; */
+    width: 120px;
+    align-self: center;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.items{
+    display: flex;
+    font-size: 1.5rem;
+    gap: 2rem;
+    align-items: center;
+}
+.special{
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.items .left{
+    height: 30px;
+    width: 30px;
+}
+.items .left img{
+    width: 100%;
+}
+.special .right{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    font-size: 1rem;
+    justify-content: center;
+}
+
+.line{
+    margin-top: 0.5rem;
+    display: block;
+    content: "";
+    height: 4px;
+    background: black;
+}
+.hidden{
+    display: none;
+}
+
+
+.main{
+    /* border: 2px solid red; */
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .left{
+    /* border: 2px solid red; */
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: auto 0;
+}
+
+.main .left .left-heading{
+    /* border: 2px solid red; */
+    font-size: 4.3rem;
+}
+
+button{
+    border: 2px solid red;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    background: initial;
+    color: white;
+    border: 1px solid white;
+    border-radius: 100px;
+    outline: none;
+}
+
+
+.main .right{
+    /* border:2px solid red; */
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
+
+.main .right .img-1{
+    /* border: 2px solid red; */
+    font-size: 1rem;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background:#525B5A;
+    padding: 1rem;
+    height: 150px;
+    justify-content: center;
+}
+
+.max{
+    /* border: 2px solid red; */
+    width: 85px;
+    border-radius: 20px;
+    text-align: center;
+    background: white;
+}
+
+.main .right .img{
+    /* border: 2px solid red; */
+    
+    width: 35px;
+    margin: auto;
+}
+
+.main .right .img img{
+    width: 100%;
+}
+
+.main .right .img-2{
+    /* border: 2px solid red; */
+    font-size: 1rem;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    background:#525B5A;
+    height: 170px;
+    padding: 1rem;
+}
+
+.animation{
+    display: flex;
+    /* border: 2px solid red; */
+    align-items: center;
+}
+
+.line-1{
+    display: block;
+    content: "";
+    height: 4px;
+    background: white;
+    width: 75px;
+}
+
+.circle{
+    height: 20px;
+    width: 20px;
+    background: white;
+    border-radius: 100%;
+}
+
+.change-1{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bindass{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* border: 2px solid red; */
+    width: 45%;
+}
+
+
+
+.bindass-2{
+    /* border: 2px solid red; */
+    display: flex;
+    margin-left: -130px;
+    /* border: 2px solid red; */
+}
+
+.line-2{
+    display: block;
+    content: "";
+    height: 75px;
+    background: white;
+    width: 4px;
+}
+
+.animation-2{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    align-items: center;
+    align-self: center;
+}
+
+@media screen and (max-width:1200px){
+    .special{
+        display: none;
+    }
+    .items{
+        gap: 1rem;
+        font-size: 1.2rem;
+    }
+    .main .left .left-heading{
+        /* border: 2px solid red; */
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width:968px){
+    .bindass-2{
+        margin-left: -50px;
+    }
+    .main .left .left-heading{
+        /* border: 2px solid red; */
+        font-size: 2.8rem;
+    }
+    .main .left button{
+        font-size: 1rem;
+    }
+    .main .right{
+        gap: 6rem;
+    }
+}
+
+@media screen and (max-width:768px){
+    .common{
+        display: none;
+    }
+    .special{
+        display:flex;
+        font-weight: bolder;
+    }
+    .special .right .heading{
+        font-size: 1.2rem;
+    }
+    .main .left .left-heading{
+        /* border: 2px solid red; */
+        font-size: 2.3rem;
+    }
+    br{
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px){
+    .main .right .bindass-2{
+        margin-left: 0;
+        /* border: 2px solid red; */
+    }
+    .animation,.animation-2{
+        display: none;
+    }
+    .main .right .img-2{
+        width: 220px;
+        height: 150px;
+    }
+    .main .right .img-1{
+        width: 220px;
+        height: 150px;
+    }
+    .main .left .left-heading{
+        /* border: 2px solid red; */
+        font-size: 1.5rem;
+    }
+
+    .main .left button{
+        padding: 0.5rem 1rem;
+    }
+    .main .right{
+        gap: 9rem;
+    }
+
+}
+
+@media screen and (max-width:468px){
+    .special{
+        display: none;
+    }
+    .hidden{
+        display: block;
+        font-size: 2rem;
+    }
+    .line{
+        display: none;
+    }
+    .logo{
+        width: 100px;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .main{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .main .right{
+        gap: 3rem;
+    }
+    .main .left .left-heading{
+        text-align: center;
+    }
+    body{
+        height: 90vh;
+    }
+}
+
+@media screen and (max-width:350px){
+    .main .right{
+        /* border: 2px solid red; */
+        align-items: flex-start;
+        width: 100%;
+    }
+    .main .right .img-2{
+        width: 100%;
+        /* border: 2px solid red; */
+    }
+    .bindass{
+        width: 100%;
+    }
+    .main .right .img-1{
+        /* border: 2px solid red; */
+        width: 100%;
+    }
+}
